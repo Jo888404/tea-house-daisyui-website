@@ -29,8 +29,9 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
-                bgprim: 'linear-gradient(270deg, #F00 0%, #FF8938 100%)',
+                'start-gradient': '#FF8938',
+                'end-gradient': '#FF0000',
+                
               }
             }
           }
@@ -327,8 +328,67 @@
 
         <!-- News & Events section end  -->
     </main>
-    <footer>
+    <footer class="bg-[#FF00001A] ">
 
+      <div class="flex items-center justify-between mx-7 lg:mx-36 pt-28">
+        <img src="images/cup.png" alt="">
+        <div class="flex items-center gap-6">
+          <h2 class="text-[#494949] text-xl font-normal">Ready to get strated?</h2>
+        <button class="btn bg-gradient-to-r from-start-gradient to-end-gradient text-white font-bold text-sm">Get Started</button>
+        </div>
+      </div>
+      
+        <div class="footer text-base-content grid-cols-2 md:grid-cols-4 lg:grid-cols-4  p-10 lg:pl-40">
+          <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+          </nav>
+          <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+          </nav>
+          <form>
+            <h6 class="footer-title">Newsletter</h6>
+            <fieldset class="form-control lg:w-80">
+              <label class="label">
+                <span class="label-text">Enter your email address</span>
+              </label>
+              <div class="">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class=" bg-transparent border-b-2 border-[#494949] outline-none py-4" />
+                <button class="btn bg-gradient-to-r from-start-gradient to-end-gradient text-white rounded-full"><i class="fa-solid fa-angle-right"></i></button>
+              </div>
+
+              <div class=" flex gap-6 mt-5 cursor-pointer text-[#494949]">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </fieldset>
+          </form>
+          
+        </div>
+          <aside >
+            <p class="text-center text-sm text-[#494949] font-normal pb-5">Copyright © {new Date().getFullYear()} - All right reserved by Jothi Nokrek</p>
+          </aside>
+        
+     
+      
     </footer>
+    
 </body>
 </html>
